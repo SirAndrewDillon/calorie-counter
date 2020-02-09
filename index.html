@@ -26,6 +26,18 @@
       <span class="close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
       <p id="alert-value">This is a alert!</p>
     </div>
+    <div class="container">
+      <div class="toggle-modes" id="toggleTheme">
+        <div class="light-mode" id="lightMode"><span id="lightText">You're in <span id="mode">light</span>
+            mode!</span><span id="icon" class="sun-icon">&#9728;</span></div>
+        <div class="dark-mode try other-mode no-select" id="darkMode" onclick="toggleTheme()"><span
+            id="currentTheme">Try Dark Mode</span></div>
+      </div>
+      <div class="total-calories-burned hidden" id="totalBurnDisplay">
+        <p>You'd burn <span class="calorie-counter" id="totalBurnRes">0</span> <span class="break"> calories in
+            total</span></p>
+      </div>
+    </div>
   </main>
   <script src="calburned.js"></script>
   <script>
