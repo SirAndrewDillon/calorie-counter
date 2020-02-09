@@ -21,6 +21,12 @@
 </head>
 
 <body>
+  <main>
+    <div class="alert" id="alert">
+      <span class="close-alert" onclick="this.parentElement.style.display='none';">&times;</span>
+      <p id="alert-value">This is a alert!</p>
+    </div>
+  </main>
   <script src="calburned.js"></script>
   <script>
     document.getElementById('weight-input').addEventListener('focus', () => {
