@@ -37,6 +37,20 @@
         <p>You'd burn <span class="calorie-counter" id="totalBurnRes">0</span> <span class="break"> calories in
             total</span></p>
       </div>
+      <div class="user-weight" id="displayWeight"></div>
+      <div class="button-container" id="buttonContainer"></div>
+
+      <div class="input-container" id="weightInput">
+        <div class="greeting">
+          <div class="enter-text">Enter your weight to get started</div>
+        </div>
+        <input type="tel" maxlength='3' onkeypress="return numOnly(event)" placeholder="Weight" id="weight-input"
+          class="input-info" autocomplete="off" autofocus>
+        <div class="weight-metric input-metric" id="weightInputMetric"><span id="currentMetric">lb</span>
+          <div class='arrow metric-change' id="dropdown"></div>
+        </div>
+        <div class="metric-dropdown metric-options-closed" id="weightDropdown">kg</div>
+      </div>
     </div>
   </main>
   <script src="calburned.js"></script>
